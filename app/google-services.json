@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "467589699174",
+    "firebase_url": "https://crypto-callback.firebaseio.com",
+    "project_id": "crypto-callback",
+    "storage_bucket": "crypto-callback.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467589699174:android:4352ad53a8d35dbe",
+        "android_client_info": {
+          "package_name": "com.cryptocallback.cryptocallback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467589699174-95lbrjhhg0qd8lq77t6qvlsoi8e0hi16.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cryptocallback.cryptocallback",
+            "certificate_hash": "c0fb3ad8b027312a256177ba35eca11b30e1ab7a"
+          }
+        },
+        {
+          "client_id": "467589699174-87grd5qdif5mpe57htu3tlrmg7sl5ph0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGA5r4oMt4Pal51IFQrp4tOgfwHMSoxyw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467589699174-87grd5qdif5mpe57htu3tlrmg7sl5ph0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

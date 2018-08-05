@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:np_width="250dp"
+        android:layout_gravity="center"
+        app:np_textSize="15dp"
+        app:np_dividerColor="@color/FranceBlue"
+        app:np_dividerDistance="70dp"
+        app:np_fadingEdgeEnabled="true"
+        app:np_orientation="horizontal"/-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Create Alert:"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/numberPicker"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:inputType="numberDecimal"
+        android:hint="Enter Alert Value"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/npText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp">
+
+    <Button
+        android:id="@+id/npCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Cancel"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/npYesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Set"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

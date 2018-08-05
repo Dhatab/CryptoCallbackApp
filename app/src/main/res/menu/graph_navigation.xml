@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_1d"
+        android:title="Day" />
+
+    <item
+        android:id="@+id/navigation_7d"
+        android:title="Week" />
+
+
+    <item
+        android:id="@+id/navigation_30d"
+        android:title="Month"
+        />
+
+</menu>
