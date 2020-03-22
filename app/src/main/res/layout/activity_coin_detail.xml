@@ -11,18 +11,7 @@
         android:orientation="vertical"
         android:layout_marginBottom="5dp"
         android:gravity="center">
-    <!--<TextView
-        android:id="@+id/newtextViewHead"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="3dp"
-        android:layout_toEndOf="@+id/imageView2"
-        android:autoSizeTextType="uniform"
-        android:text="Name" />-->
+
 
     <TextView
         android:id="@+id/Symbol2"
@@ -54,36 +43,20 @@
         android:layout_marginBottom="14dp">
 
     <TextView
-        android:id="@+id/Hour2"
+        android:id="@+id/rank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/Price2"
-        android:layout_below="@+id/Price2"
-        android:text="1 HR:"
+        android:text="Rank:"
         android:layout_weight="1"
         android:textColor="@color/white"
         android:gravity="center"
         android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/TFHour2"
+        android:id="@+id/tf_hour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/Seven2"
-        android:layout_below="@+id/Hour2"
-        android:text="24 Hours Days"
-        android:layout_weight="1"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/Seven2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/Price2"
-        android:layout_below="@+id/TFHour2"
-        android:text="Seven Days"
+        android:text="24 HR:"
         android:layout_weight="1"
         android:textColor="@color/white"
         android:gravity="center"
@@ -98,7 +71,7 @@
         android:layout_marginTop="5dp"/>
 
 
-    <android.support.design.widget.TabLayout
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:background="@color/white"

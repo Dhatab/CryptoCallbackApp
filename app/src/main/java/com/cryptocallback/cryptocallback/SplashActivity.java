@@ -1,8 +1,6 @@
 package com.cryptocallback.cryptocallback;
 
 import android.content.Intent;
-import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -10,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cryptocallback.cryptocallback.LogIn.SignIn;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -38,7 +38,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
 
                 try {
-                    sleep(4000);
+                    sleep(2000);
                     startActivity(new Intent(getApplicationContext(), SignIn.class));
                     finish();
                 } catch (InterruptedException e) {

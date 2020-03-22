@@ -5,45 +5,70 @@ package com.cryptocallback.cryptocallback.FragmentHome;
  */
 
 public class ListItem {
+    private String symbol;
+    private String name;
+    private String image;
+    private String current_price;
+    private String market_cap_rank;
+    private String market_cap_change_24h;
 
-    private String head;
-    private String desc;
-    private String price;
-    private String oneHour;
-    private String sevendays;
-    private String twentyfourHour;
-
-
-    public ListItem(String head, String desc, String price, String oneHour, String twentyfourHour, String sevendays) {
-        this.head = head;
-        this.desc = desc;
-        this.price = price;
-        this.oneHour = oneHour;
-        this.sevendays = sevendays;
-        this.twentyfourHour = twentyfourHour;
+    public ListItem(String symbol, String name, String image, String current_price, String market_cap_rank, String price_change_percentage_24h) {
+        this.symbol = symbol;
+        this.name = name;
+        this.image = image;
+        this.current_price = current_price;
+        this.market_cap_rank = market_cap_rank;
+        this.market_cap_change_24h = price_change_percentage_24h;
     }
 
-    public String getHead() {
-        return head;
+    public ListItem() {
     }
 
-    public String getDesc() {
-        return desc;
+    public String getSymbol() {
+        return symbol;
     }
 
-    public String getPrice() {
-        return price;
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
     }
 
-    public String getOneHour() {
-        return oneHour;
+    public String getName() {
+        return name;
     }
 
-    public String getSevendays() {
-        return sevendays;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getTwentyfourHour() {
-        return twentyfourHour;
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getCurrent_price() {
+        return current_price;
+    }
+
+    public void setCurrent_price(String current_price) {
+        this.current_price = current_price;
+    }
+
+    public String getMarket_cap_rank() {
+        return market_cap_rank;
+    }
+
+    public void setMarket_cap_rank(String market_cap_rank) {
+        this.market_cap_rank = market_cap_rank;
+    }
+
+    public String getMarket_cap_change_24h() {
+        return market_cap_change_24h;
+    }
+
+    public void setMarket_cap_change_24h(String market_cap_change_24h) {
+        this.market_cap_change_24h = market_cap_change_24h;
     }
 }

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.cryptocallback.cryptocallback.LogIn.SignIn">
 
     <EditText
@@ -17,13 +19,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19999999" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/textPW"
@@ -36,13 +32,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail"
-        app:layout_constraintVertical_bias="0.052" />
+        android:inputType="textPassword"/>
 
     <TextView
         android:id="@+id/textIncorrect"
@@ -51,10 +41,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Incorrect Attempt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPW" />
+        android:text="Incorrect Attempt" />
 
     <TextView
         android:id="@+id/textRegister"
@@ -63,10 +50,7 @@
         android:layout_marginBottom="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Don't Have An Account? Sign Up Here!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Don't Have An Account? Sign Up Here!" />
 
     <TextView
         android:id="@+id/tvForgotPassword"
@@ -75,11 +59,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Forgot Password?"
-        app:layout_constraintBottom_toTopOf="@+id/textRegister"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Forgot Password?" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -88,13 +68,7 @@
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvForgotPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textIncorrect"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_marginTop="8dp">
 
 
         <Button
@@ -117,4 +91,4 @@
 
     </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

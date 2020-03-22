@@ -1,10 +1,11 @@
 package com.cryptocallback.cryptocallback;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class AboutUsActviity extends AppCompatActivity {
 

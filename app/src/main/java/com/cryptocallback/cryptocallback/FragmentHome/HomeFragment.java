@@ -1,11 +1,7 @@
 package com.cryptocallback.cryptocallback.FragmentHome;
 
 import android.app.ProgressDialog;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -29,13 +25,18 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 /**
  * Created by User on 4/12/2018.
  */
 
 public class HomeFragment extends Fragment {
 
-    public static final String URL_DATA = "https://api.coinmarketcap.com/v1/ticker/?limit=500";
+    public static final String URL_DATA = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
     private RecyclerView.Adapter adapter;
     private List<ListItem> listItems;
     private RecyclerView recyclerView;
@@ -82,7 +83,7 @@ public class HomeFragment extends Fragment {
         List<ListItem> filteredList = new ArrayList<>();
 
         for (ListItem item : listItems) {
-            if (item.getHead().toLowerCase().contains(text.toLowerCase()) || item.getDesc().toLowerCase().contains(text.toLowerCase())) {
+            if (item.getName().toLowerCase().contains(text.toLowerCase()) || item.getSymbol().toLowerCase().contains(text.toLowerCase())) {
                 filteredList.add(item);
             }
         }
@@ -110,12 +111,12 @@ public class HomeFragment extends Fragment {
                                 JSONObject o = array.getJSONObject(i);
 
                                 ListItem item = new ListItem(
-                                        o.getString("name"),
                                         o.getString("symbol"),
-                                        o.getString("price_usd"),
-                                        o.getString("percent_change_1h"),
-                                        o.getString("percent_change_24h"),
-                                        o.getString("percent_change_7d")
+                                        o.getString("name"),
+                                        o.getString("image"),
+                                        o.getString("current_price"),
+                                        o.getString("market_cap_rank"),
+                                        o.getString("price_change_percentage_24h")
 
                                 );
 
@@ -134,7 +135,7 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         progressDialog.dismiss();
-                        Toast.makeText(getContext(),error.getMessage(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(),"Error",Toast.LENGTH_LONG).show();
 
                     }
                 });
